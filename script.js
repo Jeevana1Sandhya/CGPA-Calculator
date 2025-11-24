@@ -16,8 +16,13 @@ document.getElementById('cgpacalc').addEventListener('click', () => {
             totalpoints += credit * grade;
         }
         else {
-            alert(`Please enter valid number for grade in the subject ${subjects[i]}`);
-            return;
+            if(grade > 10) {
+                alert(`Grade cannot be more than 10 for the subject ${subjects[i]}`);
+            }
+            else{
+                alert(`Please enter valid number for grade in the subject ${subjects[i]}`);
+                return;
+            }
         }
     }
     let cgpa = (totalpoints / totalcredits).toFixed(4);
