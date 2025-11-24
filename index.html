@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E3SEM1 CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CGPA Calculator </h1>
+    <div class="note">
+        <p><strong>Note:</strong> Please enter your grades on a scale of 0 to 10.</p>
+    </div>
+    <div class="container">
+        <form>
+            <div class="subject">
+                <label>AI</label>
+                <input type="number" id="ai" class="credit" value=4 placeholder="Enter AI credits" />
+                <input type="number" id="ai-grade" class="grade" placeholder="Enter your AI grade" />
+            </div>
+            <div class="subject">
+                <label>Cloud Computing</label>
+                <input type="number" id="cc" class="credit" value=3 placeholder="Enter Cloud Computing credits" />
+                <input type="number" id="cc-grade" class="grade" placeholder="Enter your Cloud Computing grade" />
+            </div>
+            <div class="subject">
+                <label>OS</label>
+                <input type="number" id="os" class="credit" value=3 placeholder="Enter OS credits" />
+                <input type="number" id="os-grade" class="grade" placeholder="Enter your OS grade" />
+            </div>
+            <div class="subject">
+                <label>CN</label>
+                <input type="number" id="cn" class="credit" value=3 placeholder="Enter CN credits" />
+                <input type="number" id="cn-grade" class="grade" placeholder="Enter your CN grade" />
+            </div>
+            <div class="subject">
+                <label>SE</label>
+                <input type="number" id="se" class="credit" value=3 placeholder="Enter SE credits" />
+                <input type="number" id="se-grade" class="grade" placeholder="Enter your SE grade" />
+            </div>
+            <div class="subject">
+                <label>English Lab</label>
+                <input type="number" id="eng" class="credit" value=1.5 placeholder="Enter English Lab credits" />
+                <input type="number" id="eng-grade" class="grade" placeholder="Enter your English Lab grade" />
+            </div>
+            <div class="subject">
+                <label>OS Lab</label>
+                <input type="number" id="osl" class="credit" value=1.5 placeholder="Enter OS Lab credits" />
+                <input type="number" id="osl-grade" class="grade" placeholder="Enter your OS Lab grade" />
+            </div>
+            <div class="subject">
+                <label>CN Lab</label>
+                <input type="number" id="cnl" class="credit" value=1.5 placeholder="Enter CN Lab credits" />
+                <input type="number" id="cnl-grade" class="grade" placeholder="Enter your CN Lab grade" />
+            </div>
+            <div class="subject">
+                <label>SE Lab</label>
+                <input type="number" id="sel" class="credit" value=1.5 placeholder="Enter SE Lab credits" />
+                <input type="number" id="sel-grade" class="grade" placeholder="Enter your SE Lab grade" />
+            </div>
+            <button type="button" onclick="calculateCGPA()" id="cgpacalc">Calculate CGPA</button>
+            <div class="result">
+                <h2>Your CGPA: <span id="result">0.00</span></h2>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
