@@ -15,7 +15,16 @@ document.getElementById('cgpacalc').addEventListener('click', () => {
             totalpoints += credit * grade;
         }
     }
-
+    for (let i = 0; i < gradesclass.length; i++) {
+        if (gradesclass[i].value < 0 || gradesclass[i].value > 10) {
+            alert("Please enter valid grades between 0 and 10.");
+            return;
+        }
+        else if(isNaN(gradesclass[i])){
+            alert("Please enter numeric values for grades.");
+            return;
+        }
+    }
     let cgpa = (totalpoints / totalcredits).toFixed(4);
     document.getElementById('result').innerText = cgpa;
 });
