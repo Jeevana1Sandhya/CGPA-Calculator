@@ -73,6 +73,13 @@ h1 {
         border: 1px solid #000;
         cursor: pointer;
     }
+    .result {
+        /* margin-top: 15px; */
+        font-size: 18px;
+        font-weight: bold;
+        color: #222121;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
