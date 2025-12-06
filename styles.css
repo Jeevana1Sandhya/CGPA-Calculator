@@ -6,8 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #131212;
+    /* background-color: #131212; */
+    background-image: linear-gradient(120deg, #d2dcdf, #d2ced3);
     color: #333;
+}
+.bod {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -17,7 +20,7 @@ body {
 
 h1 {
     margin: 10px 0 0 0;
-    color: #fff;
+    color: #222121;
 }
 
 .note{
@@ -44,16 +47,21 @@ h1 {
             font-size: 16px;
             font-weight: 600;
         }
-        input {
+        input,select {
             margin-left: 10px;
             padding: 5px;
             width: 40%;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        input:hover {
+        input:hover,select:hover {
             border-color: #888;
-
+        }
+        option {
+            padding: 5px;
+        }
+        option:hover {
+            background-color: #141414;
         }
     }
     button {
